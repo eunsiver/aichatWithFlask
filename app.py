@@ -1,5 +1,5 @@
 # app.py (서버 > 클라이언트 응답; POST방식)
-from fuctions import predict
+from training2 import predict
 from flask import Flask, render_template, request, jsonify
 app = Flask(__name__)
 
