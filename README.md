@@ -21,3 +21,6 @@ training2.py, NextData.csv가 두번째 스토리 진행 ai
 데이터 모델 저장이 되어 있지 않아
 
 app.py를 켰을때 계속해서 학습하는 경향이 있음-> 추후 수정해야할 필요,,,
+
+
+HOLYMOLY
