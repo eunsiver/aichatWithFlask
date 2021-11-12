@@ -457,44 +457,6 @@ tf.keras.backend.clear_session()
 
 
 
-class encoder(tf.keras.layers.Layer):
-
-    def __init__(
-        self,
-        vocab_size, num_layers, d_model, num_heads, dropout,dff
-
-    ):
-        super().__init__()
-        self.vocab_size = vocab_size
-        self.num_layers = num_layers
-        self.d_model = d_model
-        self.num_heads = num_heads
-        self.dropout = dropout
-        self.dff = dff
-
-        def get_config(self):
-            config = super().get_config().copy()
-            config.update({
-                'vocab_size': self.vocab_size,
-                'num_layers': self.num_layers,
-                'd_model': self.d_model,
-                'num_heads': self.num_heads,
-                'dropout': self.dropout,
-                'dff' : self.dff
-            })
-            return config
-
-        def call(self, x, training, mask):
-            attn_output, _ = self.mha(x, x, x, mask)  # (batch_size, input_seq_len, d_model)
-            attn_output = self.dropout1(attn_output, training=training)
-            out1 = self.layernorm1(x + attn_output)  # (batch_size, input_seq_len, d_model)
-
-            ffn_output = self.ffn(out1)  # (batch_size, input_seq_len, d_model)
-            ffn_output = self.dropout2(ffn_output, training=training)
-            out2 = self.layernorm2(out1 + ffn_output)  # (batch_size, input_seq_len, d_model)
-
-            return out2
-
 
 # Hyper-parameters
 D_MODEL = 256
@@ -571,4 +533,4 @@ def preprocess_sentence(sentence):
     # Other methods etc.
 
 
-model.save("model1.h5")
+#model.save("model1.h5")
