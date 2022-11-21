@@ -1,5 +1,5 @@
 ﻿# aichatWithFlask
- 
+ [AI X ART 공모전 장관상 기사](https://www.lecturernews.com/news/articleView.html?idxno=84213)
 # 제목: < Let's be ALICE. > 또는 < AI ris : Alice>
 
 ## 부제: AI를 적용한 인터렉티브 스토리 메타버스 
