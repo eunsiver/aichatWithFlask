@@ -1,9 +1,15 @@
 ﻿# aichatWithFlask
- [AI X ART 공모전 장관상 기사](https://www.lecturernews.com/news/articleView.html?idxno=84213)
+ [AI X ART 공모전 장관상 기사](https://www.aitimes.kr/news/articleView.html?idxno=23653)
 # 제목: < Let's be ALICE. > 또는 < AI ris : Alice>
 
 ## 부제: AI를 적용한 인터렉티브 스토리 메타버스 
 
+이상한 나라의 앨리스를 모티브로 하여 현대인을 대표하는 관람자인‘앨리스’와‘채셔캣’과의 대화를 통해‘앨리스’가 진정한 자아를 찾아가는 과정을 표현하였다.
+
+
+## AI 챗봇으로, 트랜스포머(Transformer) 신경망 모델을 기반으로 구현
+
+출처 : 인공지능신문(https://www.aitimes.kr)
 
 1- ‘이상한 나라의 앨리스‘ 는 영국의 수학자 루이스 캐럴이 1865년 발표한 소설이다.
 
@@ -60,15 +66,19 @@ what is real?
 
 선택지 – MAD HATTER / FLOWER / 등등 여러 선택지
 
+
+## 구체적 
 traing.py, StartData.csv가 첫 번째 스토리 진행 ai
 
 training2.py, NextData.csv가 두번째 스토리 진행 ai
 
--> 한번에 같이 학습하면 답이 겹쳐서 둘이 분리함.
+- 한번에 같이 학습하면 답이 겹쳐서 둘이 분리함.
 
--> 스토리 진행에 따라 데이터 변경해줘야함.
+- 스토리 진행에 따라 데이터 변경해줘야함.
 
-->재학습함에 따라 답변이 다르게 나올수도
+- 재학습함에 따라 답변이 다르게 나올수도
+
+- 아쉬운점: 직접 데이터를 만들어 학습하였으며, train 데이터가 너무 작아 성능이 좋지 못함.
 
 
 
